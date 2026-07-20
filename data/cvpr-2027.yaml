@@ -1,42 +1,42 @@
-id: cvpr-2027
-name: CVPR 2027
-full_name: IEEE/CVF Conference on Computer Vision and Pattern Recognition
-year: 2027
-tier: A*
-dates_confirmed: false
+id: ENC[AES256_GCM,data:R9bgh6jx4xWg,iv:+QW/AsRG3Vkyq+VdDJzVkaFSAZQmi8u1FAAwOnPNPk4=,tag:7U9ECvr8wtINo/Vc7r1nTQ==,type:str]
+name: ENC[AES256_GCM,data:3xCExn+xCAQY,iv:sMEh2DbHCSxn5lUDdrS6VMo+e9+bySYqxIz43UvnKt4=,tag:knUt83hchxLrkOPLXxEF3g==,type:str]
+full_name: ENC[AES256_GCM,data:T43gINpddmeO6v++JTVu62j1n7BcFFfbFfVfZPsuxe0tyV0Q6PPTnF9ywMJTWJbyXArtQLIzIMd3tNVD9VY=,iv:jCP2tkXARgm1KAmxnkNwzpzhNrq4tL+Es6Rm15E14ew=,tag:21INayIwKF05Mo8Gj/LyMA==,type:str]
+year: ENC[AES256_GCM,data:iPcXpg==,iv:bB1fdmlghGpOU47tUPbpWlhbordH0WtWwd1vGR0URHk=,tag:1WbhwfN2nXkyvvdAhqRhZw==,type:int]
+tier: ENC[AES256_GCM,data:klI=,iv:csMUmvvQDWMQ6FgdkhD2oSWL0nrOdXm+nlKJv8HH9Uc=,tag:AHIgGGHcnozaoYrODQJHnQ==,type:str]
+dates_confirmed: ENC[AES256_GCM,data:0F5mYsw=,iv:Md06R+thPs4IwWByOOEHZya5DwbyiQgZqv8MD3WaLik=,tag:gMOmKClKdXf3CMMe6PD8QQ==,type:bool]
 topics:
-    - computer vision
-    - pattern recognition
-    - multimodal learning
-location: TBA
-format: in-person
-website: https://cvpr.thecvf.com/
-cfp_url: https://cvpr.thecvf.com/Conferences/2027/CallForPapers
+    - ENC[AES256_GCM,data:xveBRrC17dvdcyR/JNhU,iv:bXuJ/kMUyGmp29CqeO3tkkiMY4fXXgzsBzQFGNO3zAw=,tag:iRs/OVsfh+kYRsp4losXKA==,type:str]
+    - ENC[AES256_GCM,data:AseqerzyaWv87uNtN+q+ClfPRA==,iv:R0hbVsoOfRTcUyv3IrCeAZYH2T3peSEAeQBS8BOhByg=,tag:I68MgEoTN0weXw6bmxmyFw==,type:str]
+    - ENC[AES256_GCM,data:hZWMEu2YOdUSfrDXq8q+0nAY2w==,iv:cgN2LSNbInTbgZWbx6j0NtWn0dRaGxZJgWgoGfx4mc8=,tag:1JECqnsCe7qBXgqu3FOTDQ==,type:str]
+location: ENC[AES256_GCM,data:5LME,iv:8uuT21BasqgxzLaNBQyGI/VXRWTglm+2dWQ4ap/UvBs=,tag:lCnp1HQ9Z0rz27GWLv+4Jw==,type:str]
+format: ENC[AES256_GCM,data:BKhfEYeIxtCH,iv:ojly1sgA4R56A0UYJS5KoQLBYicaWfLUctbHW8mXVZ0=,tag:iUWZ001zMbLe6BbVpKDkyQ==,type:str]
+website: ENC[AES256_GCM,data:oafBsSc6VviKboMJzfpUzqB+5oiGppz+,iv:qQHGdRj7fqdhz6dlenoeRI8p9qilrBR2aEA7evue+2s=,tag:xHqI5V3yvRVfeiGiPnAWgg==,type:str]
+cfp_url: ENC[AES256_GCM,data:mayGGFGSJ4YJbbFsLiFx4LA1Gi0gIgY3k1FfRjBQOfV0iiTxBLAtmw9wJIWagkSIXMsnfmGS,iv:oOpriM2caPmy/mitxSyrYl9ZYg6iU9o8jzp6l+w8Q44=,tag:mMBJycVgPDKn15ZnleReAA==,type:str]
 deadlines:
-    abstract: "2026-11-08"
-    full_paper: "2026-11-15"
-    rebuttal: "2027-01-30"
-    notification: "2027-02-26"
+    abstract: ENC[AES256_GCM,data:ccYsnImKQQW/8w==,iv:zVn1yPMR5mH8EmRovSE/xl0tQCKIoQP0zDfJigtdApw=,tag:0ePMvvEaP2Txdxt6oSEzdA==,type:str]
+    full_paper: ENC[AES256_GCM,data:+yVS18ITduKSJw==,iv:UuT9VQkZp9FVUZQAKFCIDRawzxJiG1iaLhdwrEHcSCI=,tag:aabOZdJs6VQW27fnRF1uNQ==,type:str]
+    rebuttal: ENC[AES256_GCM,data:KlxhFdznmqBWTg==,iv:QwaKznqy/dSUw7uEBkwK5VELbg8Jm0onzOdLnjBl1UU=,tag:9H7OMzPd7iP8QelAVF5fFA==,type:str]
+    notification: ENC[AES256_GCM,data:3E4scFyPu37rIw==,iv:RO0BKKI3jO9kRQt9Xi7xM7t2mu1u1RQ/ZsjLkVZg0ps=,tag:h8AJEcMM6lza2a8rbFB3KA==,type:str]
 conference_dates:
-    start: "2027-06-13"
-    end: "2027-06-18"
-# --- private curation layer (encrypted by SOPS) ---
-priority: ENC[AES256_GCM,data:vQ==,iv:HXYXZ/93/oYOEA5tITtEqrWAp2eTPN8awKFfccwuwAs=,tag:nPm/nGpH4hCeUk8LaDTE6Q==,type:int]
-notes: ENC[AES256_GCM,data:+JvRO8xO+u1ey9Zm2W9HForxNzy5mr2EqACJTbAshnkwiK7rJSl8Qxx5DJpWmS+Q8pSmYWnmxeeIn+q8S8tBu9ignTrsHN8X5NNkQS2KlIy6kjeyRNSoxTdnsvKMKqDakhOHEyWOohAEbIRzmI0ojf8FrJHsXm7QpwF0SQ==,iv:RqXtE9udRb3XRFw5xX3H/D0yjXtrzPgmmN0zGptdMtQ=,tag:ohLRSNI0rFBOtc7n+qdhdQ==,type:str]
+    start: ENC[AES256_GCM,data:VBhJJeObMmi2aQ==,iv:rgammSrdiUKETmy3nCQDhP+WPBQ2970HcCvqeI71kl0=,tag:tYJsmBqhb7efIMQDiw2D9g==,type:str]
+    end: ENC[AES256_GCM,data:2NoCYzkBHeZ+Rg==,iv:WgCBXOEgUj7mj9fdFeNAiQilc+CpYp9Cm4RHYK6Bn60=,tag:um7+x70NOhqfkc0cvLB5dA==,type:str]
+#ENC[AES256_GCM,data:PYea/p5GtMhoSYWfklDtOkm8tLya7NXiiWQji6hdfYmxIsFQ5LVOPN/vJJwMwZKZXTnC,iv:MQl1b1weQS95kpok6951Pb/6hxUrucAWnU51bpCOyIA=,tag:l/CRGNbuRG1X6pOnsM8sxw==,type:comment]
+priority: ENC[AES256_GCM,data:4Q==,iv:Bzb5V/bHhFC4pAgst0ikI5X/4XEZt+UDq9pvoaMpJZs=,tag:f8RsZHROp4EjXvG/qdmVrA==,type:int]
+notes: ENC[AES256_GCM,data:wX63ynEOsEhzVyJotlk0ZfqAN2b09ARb8hl3oL4zjkRUh0gQ/rWulwE2vY4lFtEkq4bow4Qch2TdGgJYAGCS4w3n0O0CHW7m4gaajtzShKxvTBMhSmO9rXvaCWQGBk/72HKr4qRLYuu/Ww/D4cU7MmQfr5bO56nASiOGFw==,iv:Qs8SgSQQS5qwBIXbQ74PVQWwSOL4rsBAVlDyRZ41shc=,tag:mqG139WqcZo3GhzzY6oNsw==,type:str]
 contacts:
-    - ENC[AES256_GCM,data:+EKeoOTLimB63ELDNutqq9UKOX4PiQ==,iv:/jC3GGpfku6LJ494PQ8O/BHyYq0XUTWHoeMgEpbVOp4=,tag:bfbLb7KM0wsj3okOzrEmmQ==,type:str]
+    - ENC[AES256_GCM,data:tNAtR6tczVQuzW+xASH9byi+7j+rgA==,iv:2zv6HFj1PgJErAKG8hYhbsZLfoXoPEv9PMSCzTaISlY=,tag:d+APrP1Xhs/Deu6NrzU6pg==,type:str]
 sops:
     age:
         - enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBiUFlyZ3hJZWRpYlNnZTZm
-            Zm9tYm1pYjdreFlBUTRtVDB6dTZRYlBjdno0CmdxVVJHRTNTMWxBZ0xQN1NlTEhR
-            R3ZVUDFxMURxeWVMVi8yenhzY21raGcKLS0tIHlWbVB6bDlEV1JRUXpVZ3dFT0Mx
-            RFVJUW9yWWFZdUVyM0VpYUVBSDl4R0EKQqNsFatYLQSfOX65KxYsg1Iw3nkq2vwQ
-            JABNqmirCdgV989vQsjLlTUwQnBCdaySXtGLHJp8ikrj8AjkcuFZ6w==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBEOXpOdXVkS0R0OGg5MjFv
+            Z2taNElFWU9SMkxGRE50dG5idmZ5N0RxOGhBCmdidDByak9iaWhyRE5mNHJQY2p0
+            OW9vQ09McFBuL3ExdU1ZZGJYUVlFVk0KLS0tIGRMUG9xelhDRzFoUG5EQ21tUG5y
+            K1NOdXl5MTBpeUVhTFkvMjkyUmkxL1UKK9MwCnVMcP9hnzgAm5KkMdrrNDJzDwi/
+            XU1NIzfcUbcTb351Hg0gSqrlIxZv4D2FLePWGT6GkAqgyLKz7e+X2w==
             -----END AGE ENCRYPTED FILE-----
           recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
-    encrypted_regex: ^(notes|priority|contacts)$
-    lastmodified: "2026-07-20T02:09:03Z"
-    mac: ENC[AES256_GCM,data:u51PGAHesmAsR78CqHwV4AuD1yDKWD+AmaKqtcjlDCo0a2YLnIbSzlb0prJw5xAJrecuihhJ/+SN7HnLCZ3p+RUgWHQ96AI5ET73VBmjxgyC7YY0akyTmOz737LLJ+iJH/tFHt0ECdmy+WEwIZ7qnE/K8v+Mdd2NH14QRgEhGLI=,iv:3ArAB2031BDFU0IxIZpW3opXVz4/91KezrQdU4ZOPAI=,tag:XoSJyP9rw46EQSb0dG2q2g==,type:str]
+    lastmodified: "2026-07-20T02:12:11Z"
+    mac: ENC[AES256_GCM,data:ztPUXADgd5FR1ERXqhyFAAZsXMsziXMa37W2uALDqsF5CYOTCwwZ44QU2slA2nXijoKMfr9lGkbg7+b41kyq7yYJM5rk+jQcIQK5mmqMi6OCk3YAor4BVgeK/TOWvkAIs2wWL0+1p3t6m4Gkkx2+zRkhMjnB0Y8ckWdVC47fwV4=,iv:BLjOv75Gr6SQ+/X0FtZDZt31k8IsxBR5H4js/KlgVEQ=,tag:hmzmZAQLwHZsezUux8v/jA==,type:str]
+    unencrypted_suffix: _unencrypted
     version: 3.13.2

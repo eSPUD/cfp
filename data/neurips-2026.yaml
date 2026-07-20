@@ -1,41 +1,41 @@
-id: neurips-2026
-name: NeurIPS 2026
-full_name: Conference on Neural Information Processing Systems
-year: 2026
-tier: A*
+id: ENC[AES256_GCM,data:oKRvU0FC61rqUpYR,iv:KYKRcXWUQIITIVZpi/aKw4ErsCwMRMCYAAizakC8TO8=,tag:3DMNixKBRSrjEOPJhMcUmw==,type:str]
+name: ENC[AES256_GCM,data:4bug3gPNxhs6GAec,iv:YEi+Fh7MlQqTCjmOo0EEDEEk1+lXgBAtrjjwVXEU+s8=,tag:Q1jHU31zv8WgbzXXiAjzgg==,type:str]
+full_name: ENC[AES256_GCM,data:2ayFYfviyGhXIOiWZXCIKSHbQuDicGam7hU6J4K043zfX5s7/M1ofSpOxmOjUrJrBgA6,iv:x21sZTpPy0g56ob6RFyqHuWWoJyt/ihJlFoDfNAhfVQ=,tag:9RVhmtmT/szXbp8mz0tGxQ==,type:str]
+year: ENC[AES256_GCM,data:7EmnbQ==,iv:UFb8/zMR8x8UHT2N9rk7tjFrm1pWjP0Bqq6bfRxQEvM=,tag:5nPVi4RCIcYMi3CkM0B6MA==,type:int]
+tier: ENC[AES256_GCM,data:SNE=,iv:23TQaMAsx7RMtgSFx/LjhDZy6hHfnh+BgPuTb9NOZzs=,tag:AMvQ1YQ7KoR9IuLHTAl/Ow==,type:str]
 topics:
-    - machine learning
-    - deep learning
-    - neuroscience
-location: San Diego, USA
-format: hybrid
-website: https://neurips.cc/
-cfp_url: https://neurips.cc/Conferences/2026/CallForPapers
+    - ENC[AES256_GCM,data:Y+nEPQCobZ5V1xgr2JuYHQ==,iv:rhj/55DVkOrdlDnyXCHpcHNOVNMI+u1NNUO1S4MBU70=,tag:HgHkA6XT86t4zEBLP5DTrA==,type:str]
+    - ENC[AES256_GCM,data:SAdXQLyX/+WWEP3oXw==,iv:O0+2yTQSLT+4SHjYKp+kvI1CeaeA9eG3QB0EUXabDCQ=,tag:XR24G4fQ6avkvMsLt4MA9g==,type:str]
+    - ENC[AES256_GCM,data:Y4cpvqM42DoY5PK3,iv:dVCMDSRQvWV9MtCRgeMbuVPvaw3nRIls5HwGuvcPyLE=,tag:LtX73lEnSejHPYYZgR2Z/Q==,type:str]
+location: ENC[AES256_GCM,data:j1F2m0xZ5OV+DKcqwvA=,iv:0Id1bSMZsctauaGIq43DR+krG14nOAWi8iNsa1qtLgw=,tag:pxaDKtmdEFwh8cAamZ7ikw==,type:str]
+format: ENC[AES256_GCM,data:6DJgFjJW,iv:E96LfN896y7514NysZYKpykvBJzjvE6v7XBzpUvTwzw=,tag:PS/SuCQc65di1J8O8zXAYg==,type:str]
+website: ENC[AES256_GCM,data:8BBaOvgGCTD0eVzKxXmtfgDJuA==,iv:UtSmY4s+oaccacFrnrBdTcDpqixAjIY0opQYLzjdku0=,tag:LSavE2J8u3A1GwSxcM7Qqw==,type:str]
+cfp_url: ENC[AES256_GCM,data:RQik6VIk/ezIwUJe5CMWHWfK9rYRjpw8zSWHXvag8r/eYpq6FH9QBA0R3RLbl/2ayw==,iv:h253rTZr0jjmFVVC8zxB0P1o+vf9fTrS/xIxBKQkUuE=,tag:hcppOdNj9ohNJ/imTiWIsA==,type:str]
 deadlines:
-    abstract: "2026-05-15"
-    full_paper: "2026-05-22"
-    rebuttal: "2026-08-01"
-    notification: "2026-09-18"
+    abstract: ENC[AES256_GCM,data:wdFlRXXgRdM90Q==,iv:grIPOCa3xUsPYWleNzhvbSEcOgnPL+GcOBaY9vUOtkY=,tag:uqns2/KQwU7N3QM/lg7vWg==,type:str]
+    full_paper: ENC[AES256_GCM,data:VAJ5+IdzE816qw==,iv:GRyk+Xa+MJxuP65jOzA9ITYy2nGRQfHf/+dZ79+Wxd0=,tag:10CC1b3+qRTjJuu5PtCskw==,type:str]
+    rebuttal: ENC[AES256_GCM,data:IwzoZhi5BGwmVg==,iv:wQDEJbez97+zmLwPwxvSDVThqUMVc0qbY6ACRM9co5g=,tag:BEOsunCs6IK6kUK5/0TZWQ==,type:str]
+    notification: ENC[AES256_GCM,data:yCRL2aTqS14UDA==,iv:iexefH2d+t9KKb+zP0VUTag2hIMqscudGwyELicFmgM=,tag:aSdrum6lsJ6i4uXJudssow==,type:str]
 conference_dates:
-    start: "2026-12-07"
-    end: "2026-12-13"
-# --- private curation layer (encrypted by SOPS) ---
-priority: ENC[AES256_GCM,data:4Q==,iv:Fm9tMHEWsA8aroJLMVwA9ipaHCMbaHD3E6MPYISm0t0=,tag:oGviWG+R6NBQNunF2W3USQ==,type:int]
-notes: ENC[AES256_GCM,data:25gWq2IjKEMqmVkufAbPEig4Nd85poFhC6EdzR7xepn6UKwfJnsiQLZzQqHnTm0s+IWF3QzT9pVJpmzIVCKm8zcP15Mz+8Pnvd/J6OMAsLxKDjxR,iv:WjoEUdflpUUi4GBxPPgOxfZh+3crHDMHA2K+4Mkw/6M=,tag:gaHLO7r9BMTN+grlUe+JhA==,type:str]
+    start: ENC[AES256_GCM,data:ugQx2NSXTRhbRg==,iv:kys/tORorsjrSdhWY21ylcrVkatVnvOwdvXqYRtprWM=,tag:HZOu6zPJae8ECZf6MwWk6Q==,type:str]
+    end: ENC[AES256_GCM,data:2J/nlq5vhWhznQ==,iv:hWVAdsz4KX7QWcNYc/1fIqvjDL7bUrMCG/CUXETnZcQ=,tag:2SHXVOt23tEZOVDlm90jYQ==,type:str]
+#ENC[AES256_GCM,data:V4xu3PzWsS0NgO6hQIijTrY7U1u23G4ls6f+82+20TuzIJV+91GyyCJ/jzDMs6ifGmpH,iv:7U4wmYlIWrLQ/UllWUKox/4flSq7PEE1U00HdaeRHzk=,tag:cqMrSRumDpa3NKml+f2QLw==,type:comment]
+priority: ENC[AES256_GCM,data:6w==,iv:6UqGHJE4fs3cBjkkvYC6ZBv9HuUoulVqiJT7Y8cveLM=,tag:EyE+nlIMq1ucyGJUzw48Ng==,type:int]
+notes: ENC[AES256_GCM,data:z8Y/n2j9UcHsOkoUhEPuZfQwkRc0bL5FjPyrdFxS+IAlCiHNog26qkI5hayeE7zoYzQBrZpKl8D+xEEVHZyrLor4xMn2i2U6PaDm7LZXSUZJbt/D,iv:3LKM1dhoT+SDd64bpHkUQGd+Vi/EF8ao0HwTRLX3Zxw=,tag:qw0RJNfsJu+hrAnt5rT87Q==,type:str]
 contacts:
-    - ENC[AES256_GCM,data:+LnrrVtiY6qQJlApt6ZJRt0O68l7DyCeSw==,iv:zNy4HeAB9iTfjygo2w7VGHeKjvEQZbcKJ+6GRxSzhgE=,tag:8+OotGxirUn2ax/5Vmx2XQ==,type:str]
+    - ENC[AES256_GCM,data:FQdFr1DJRzqkLBcARsv4w/C7n4WLtm332w==,iv:UhFzBmMU36gjII4ZxQmu0EscJiYJeOnkOfVIwZ1s33M=,tag:zrwRtJxJxdt+1HQagXQfpg==,type:str]
 sops:
     age:
         - enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCNXNKdm1KRlR1dTZxa3lx
-            Y1UxbGhNcWY5ZFVGMTk1dXBIYXEyTGV2R0FNClF2UkZHTTNUTXRjNWlsdUFudEVp
-            d0JsMmFFNFc4WC9xN2VkMXFaWGU1Q3MKLS0tIG5KUEpZNVlzbGtXL2JlajZXUnIr
-            ekc2YUVyaCthYkptU09WcmtvbjV0R1UK6nFYfrgEFp23fe8QaFseX/cht2B45J/H
-            adPSMMd5Chy0YwWgZ2W8WAdyPAWnU6y3tRWP57bwfqY/FxRU8hQhMg==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBwMVBubkw0NDFBWDlPWUVs
+            ZDB1NWplcDJ6WG9mYjR5dWdyUUs5TjVqK2o4Cmo0U0xtV3g2QzBtT2FBVmRaMm1m
+            TldOVEFGRWdiMmRMWElDOFBGMndNZGcKLS0tIEpCMDVHaTh6TFZEbi91dGJMYjA5
+            Y2NGWlQwN2hZYmN4RjlLeFFERTNkZEkKwyWdp+J8asJaeEVJ/WjOwLyoNS4kAACX
+            NVlpTOlw9RJ0AdKINEY6U2ixBDDi5N8XTj4PtmqZjvupTnVXcotZjA==
             -----END AGE ENCRYPTED FILE-----
           recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
-    encrypted_regex: ^(notes|priority|contacts)$
-    lastmodified: "2026-07-20T01:58:45Z"
-    mac: ENC[AES256_GCM,data:BHnVHnRt8lP49AxNQ8eW3YBvawIQKe6NhpJRrRWThTsmpTgEVrsNykv9Wa+uCtoE2K1be+Lfi5+BhYT9nCSCCpIq7Mtgh4GEHS9x8fNRvH+0X4Kp+OFhZ3KIit3OrrVC55hkKOt/FJtNOJmlmHlAnCwdmZlOe9dtNQlBaM8SgMI=,iv:F8S1fpQZ7GybyQVGOAikJK0Gu3DfDrZl1+pGdTGQsZ8=,tag:FVQLP/z3EenQeBtLzgv0IA==,type:str]
+    lastmodified: "2026-07-20T02:12:11Z"
+    mac: ENC[AES256_GCM,data:kO7Tkwi9IALH1KHkoPHFwdaQdS/agrMNZPCXKkKdSYSG5M5DcoaksrHqkx2bvIzXtQ7Pk5ZX0sF4FYG59oDiEL/CkcSDJ5ulAXSV2EU3AGNSf+mWFjZfiWoG80qXMQ10vvKWPVW+F/OdGsVpvr1UCLxXMySR/aDQ3MqSIbLcUqw=,iv:ULv3NJTk8xsmAGluaaCstwZxl8jAb56Liu5x5tlrInk=,tag:qqujF/joQkrkC4hStqAI4w==,type:str]
+    unencrypted_suffix: _unencrypted
     version: 3.13.2
