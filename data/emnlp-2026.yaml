@@ -1,0 +1,42 @@
+id: emnlp-2026
+name: EMNLP 2026
+full_name: Conference on Empirical Methods in Natural Language Processing
+year: 2026
+tier: A*
+dates_confirmed: false
+topics:
+    - natural language processing
+    - empirical methods
+    - large language models
+location: TBA
+format: hybrid
+website: https://www.aclweb.org/
+cfp_url: https://2026.emnlp.org/calls/main-conference/
+deadlines:
+    abstract: "2026-05-25"
+    full_paper: "2026-06-01"
+    rebuttal: "2026-08-12"
+    notification: "2026-09-25"
+conference_dates:
+    start: "2026-11-08"
+    end: "2026-11-12"
+# --- private curation layer (encrypted by SOPS) ---
+priority: ENC[AES256_GCM,data:qQ==,iv:OP9ghj3UtUviq2uKSewwBOdtwMajGptSdfa6OTaxUME=,tag:VG8U3SnMeU846+KagTSGgg==,type:int]
+notes: ENC[AES256_GCM,data:yfyl6Ai2RpnM+rK/z9DJDcG1tCoq84MVhMsB7XQx+FRoKKB8eh1uslUa9KyuNMokkGhp98HRhKZCOToOJAJyrzl1Lx9+B5/+tq/REQXZa4Qm3AOf80zomTIKfk84I6Y/ve0gnmmOT6dQ13ocszOMXKwJOg==,iv:QVMb6cRiT73u7ER6/toUJzr//BvpYKKGuEp7jw1jOts=,tag:Ih5ekUio2SAsdeE1b+R//A==,type:str]
+contacts:
+    - ENC[AES256_GCM,data:FEdrRDvxy3R40Ecqsw3Mr4AUDSMsI7zs,iv:eSXb8+TDzbe9A/OtLcyqeij7Wj6+ssHwCwxsJ99xKK8=,tag:Ji8Gkvyyx1nxYbxAnjfBGw==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBqR1JuTHl3UGRPRmRVTysr
+            U0U4QUlweTJWZkJ1NmR1RTFVM1ZuQzN5MVZNClI5ZWU0ZHhsdUFibFNxTU1sUmJi
+            cjRmelBGOGNaU1JVUU5pekxwTlV6UGcKLS0tIHE0QktyZFZRNWlWV2lSNDVud1Vr
+            WE9WMzdoTThIZ2VSbCtWd2o0THB1N1UKXWFYrVaeFV1U6aad2aGqeTYUsi9yI7aI
+            rM7Wopf9PBh4fLL6HY7Lu9zg8z+WTgTWbzWVK0obHqxWoi+pikK4uw==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
+    encrypted_regex: ^(notes|priority|contacts)$
+    lastmodified: "2026-07-20T02:09:03Z"
+    mac: ENC[AES256_GCM,data:dRE6NbCEKnMQIebRazxGpIOaJBy2WV6+F1sO7/Hhxmm0LFFRyKhhX1P47Twvd44k6O9UkMtNgoCFlkkVUHPqIZosZsw9V+iYLm4rA/FKy0KwEalgSTChwRWG36Idqk5xm8yHMwCjhB3SI4SI9vBcsV7BIEpJM9Aq+z+bvpGLd8I=,iv:IljxaedK/aprsGH3IYUoHckcnBabIdsoaSZhdMpDdkM=,tag:aDqQZG+Kuy3Sg47fEa14IA==,type:str]
+    version: 3.13.2

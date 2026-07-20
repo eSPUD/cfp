@@ -1,0 +1,42 @@
+id: acl-2026
+name: ACL 2026
+full_name: Annual Meeting of the Association for Computational Linguistics
+year: 2026
+tier: A*
+dates_confirmed: false
+topics:
+    - natural language processing
+    - computational linguistics
+    - large language models
+location: TBA
+format: hybrid
+website: https://www.aclweb.org/
+cfp_url: https://2026.aclweb.org/calls/main_conference_papers/
+deadlines:
+    abstract: "2026-02-10"
+    full_paper: "2026-02-17"
+    rebuttal: "2026-04-07"
+    notification: "2026-05-15"
+conference_dates:
+    start: "2026-08-02"
+    end: "2026-08-07"
+# --- private curation layer (encrypted by SOPS) ---
+priority: ENC[AES256_GCM,data:gQ==,iv:7CDjrChS0NEjG3VMTeRt1na8ISl1jFYplXyfPeAtKRg=,tag:G1rTCHuGEMoJwWC81ojmXA==,type:int]
+notes: ENC[AES256_GCM,data:UX7Y+wEYGSdX7Ix5rDdZoa3stIu7Y4ffm888Bh2qw40rccFSINgTQ8B/RX/Eyix5BNlh1m7/YNf7DB/hQo+Tkq7D0DI1VwiLwLjriR6RhYhow2Y0XEcIECjJ0dkHLR3cCTDltWZ51sgXLFKRwzVP974gh7GDrjlM1tHXuZfhxg==,iv:Rza9HuT7EAzS/GRyccGzNgxfkabp46M/CMywaty+cjU=,tag:mpUGTJGy5M3NpOxRNps8Mg==,type:str]
+contacts:
+    - ENC[AES256_GCM,data:56wjkf6tEBcBtWdbnZYMDDmg/dxic8PWfg==,iv:fD6fOuRhAlx90u5qcI1PGILR0JAzZsvj3JCKdLMwC0k=,tag:qORTKbfSNaE6C6uHj86hXQ==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAwdVlCY0pYb2xsVTNRQmFl
+            TnRyZlhsMzdkcnFMYUU2VW5hZ0hneUZoRUhNCml5b01aeENXNW9UUHh4Tk00UTZM
+            c3IyQlVTU0FtMzhlT0JSa1F3TjZRS00KLS0tIHF0b2xJQzhUbzlRaVJOeHBVUk1F
+            QjFJcm5HaG1wNmZGcTMwQ3J3emk3Tk0KTyQ/i0UHMCIRO2hj/nzJIiQ/rGowLnlB
+            HY44tj8REu9nVvmL5wRQDwBOtQta3NadWKhZN64RYvQXFaJWh1wOow==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
+    encrypted_regex: ^(notes|priority|contacts)$
+    lastmodified: "2026-07-20T02:09:03Z"
+    mac: ENC[AES256_GCM,data:9IufDb7y4zFzxNSkUSaIIrtB1KUgTwc7dANwdCvAb7QCmQoNqngeMyj+CdjINnoA/elMQphs7A7UZoi1u59yg40DXBbIddBqOShCG2r9bh2iUSb1jD7SRAT73W8GAjiRm0xHKaCWSykTlfOyfriWfFvIRlajoFNEOxa46IX+tFo=,iv:j343yvDhWNRBclEDPWuETbN63Fmxmb+YJ5oDTOHlhSc=,tag:aF9wov6VNVO6yse5cga3nQ==,type:str]
+    version: 3.13.2

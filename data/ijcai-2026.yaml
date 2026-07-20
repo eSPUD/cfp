@@ -1,0 +1,42 @@
+id: ijcai-2026
+name: IJCAI 2026
+full_name: International Joint Conference on Artificial Intelligence
+year: 2026
+tier: A*
+dates_confirmed: false
+topics:
+    - artificial intelligence
+    - multi-agent systems
+    - search and planning
+location: TBA
+format: in-person
+website: https://www.ijcai.org/
+cfp_url: https://2026.ijcai.org/call-for-papers/
+deadlines:
+    abstract: "2026-01-16"
+    full_paper: "2026-01-23"
+    rebuttal: "2026-03-20"
+    notification: "2026-04-24"
+conference_dates:
+    start: "2026-08-15"
+    end: "2026-08-21"
+# --- private curation layer (encrypted by SOPS) ---
+priority: ENC[AES256_GCM,data:lw==,iv:j+QOMVnnCWHOwFPXL84l/swaItju8DBO/e70R1jhDc0=,tag:xP49UWxTErxtRrPmw5mKYA==,type:int]
+notes: ENC[AES256_GCM,data:SKgQE5zZ7N9IHJ2YXQoOZ6Qo8gB9Fa9lItFybLj/7Nr9+Q7mBjNgtwv2yX6Etz6J1nIJhhR+DEFsAAolOnPbamMiqw9VcvLc5KZksSaSuObekunwYkLxgJmyP8uN5oD+sbuhhcxTh46apwvLlWlI,iv:p3VJAmkff4d84LgMvZCnbFir5LDERro9R/wJkRJcjbI=,tag:vV4KZJs0ZEX/3WjmJ7SkPA==,type:str]
+contacts:
+    - ENC[AES256_GCM,data:VqMBlHMBsFD1HUylhew1dAwMjRe5puAA,iv:Zn9Si8vtQAilaq/LNLy/gTKYI+V3+BpUfC+dAYWUtgI=,tag:8ciGJKG5mwhmNfQqz+tOoQ==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBrN2hHL3dYcG1OTW82aStl
+            RGZiL1BiVkdiVmlsajYyeFhaMW9DVzgySlZBCng5VzFTN29mSm81K3BYMWMzVnFG
+            ZnZxTG5YUlEva2xlbTFMWkViVHc0VlkKLS0tIEtucEplWmVZQVdmWDhrTHU0bkNY
+            Q2NMQlBDMzd5MWxRWW93YW9KOGZvdXMKTE1CPwh/IyaEhSmaxpzREYHPKZ/yxZql
+            gIv5pPWrJcONkFVN0UZjlZ3EMencuQoZx35CzWFVgoy1K8Wh0ozzsQ==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
+    encrypted_regex: ^(notes|priority|contacts)$
+    lastmodified: "2026-07-20T02:09:03Z"
+    mac: ENC[AES256_GCM,data:bt5DufRhnodOhm7uWMBv0kukp5mMZnVa22P59gjdYQxbrPihC7Ec1cJKE7kU5C12DzobofSKAsTS8K/bWTXBxLMMMLZcLdpcFXy40qo7Fr9rhNAIbaQ8Q+lsTod6ZCws8gSntp83MOdqgUyXq36xL9tjSzEuAWhBw3A8WOWLPgA=,iv:8yLS3xaxDqGVSFduw5whHbvkKHbyTf4Fvxle9xgR10s=,tag:695Uxb+zFDByW7huYFnC2w==,type:str]
+    version: 3.13.2

@@ -1,0 +1,42 @@
+id: iclr-2027
+name: ICLR 2027
+full_name: International Conference on Learning Representations
+year: 2027
+tier: A*
+dates_confirmed: false
+topics:
+    - deep learning
+    - representation learning
+    - generative models
+location: TBA
+format: in-person
+website: https://iclr.cc/
+cfp_url: https://iclr.cc/Conferences/2027/CallForPapers
+deadlines:
+    abstract: "2026-09-19"
+    full_paper: "2026-09-24"
+    rebuttal: "2026-11-12"
+    notification: "2027-01-22"
+conference_dates:
+    start: "2027-04-26"
+    end: "2027-05-01"
+# --- private curation layer (encrypted by SOPS) ---
+priority: ENC[AES256_GCM,data:3Q==,iv:S7CtHvxabcpqwjUM0jft4WdPObzdRqG3PQ3kVJzHo2c=,tag:AYm/Ih24CMg5qYJtvLNgkA==,type:int]
+notes: ENC[AES256_GCM,data:t6L6cJYXu2/aBaxY/N7ucEHe1WZhXxZxh/iZ1iHAoZ2rd0sWs4kH0TZcLskfcL6xhFxLXGNCQTkn67N9QxyNUglp92aYLc5inoS1fHsD0+/d8DU8zN4e+yuuFUhbdEDNZ5cMqldM77THGuiMqefefP0=,iv:isWVdvLxO9sEDUanJvVYSf6cvwIlBKVHh12Ta7YBVzE=,tag:UxeEiOSyK/NFeZparBHnSQ==,type:str]
+contacts:
+    - ENC[AES256_GCM,data:H26m8E1mMk0alcVXmnaLZ6+xf5xoKQ==,iv:5AExIDWRE4ZalwSQoZRWli3FEkzts0l47eQZiTT4gk0=,tag:Lhh/USzRcfFMMpYUdQ4Xig==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSB4dTBWdHhaU05vSFAxeG5P
+            RTl2N2pqenA0MXNSRGVjaHhDK3pRWXhMY0MwCi91a045REI1VWFFVlp5R213TkFy
+            UWwxdXlBMERIZXBSckVlRFpROXUzSmsKLS0tIDBDN0Eyd2owVll1WE1iTEpUcVhD
+            UEZncWVGbnRkNE56ODFnaXNYSFRvMU0KeaLYIOxxS2vvOHGU9EWoEBY3JG7fesNQ
+            E9heLbFBkH89bxgyvZygtitp9uiDMJDuNBZ3e+/qmv+6eroeZiAz/Q==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
+    encrypted_regex: ^(notes|priority|contacts)$
+    lastmodified: "2026-07-20T02:09:03Z"
+    mac: ENC[AES256_GCM,data:bSYTTRdoDrFp8Taew7W9IWsoGnM3IUbqX7xzYML7qIPGSfhpZPn6u/1dLhiUhfV35zl63LmuJo5bSI0GRWGk9S9mPRJM+CGT6cSZM+ucgQNYrCdVq37xvkCpOPiG6dxZnKuynUWOVoXvaEOkFLziYUMzq1hGrRPMBwAjpZ4bvs4=,iv:uheqtCPwO+cgKAxmn4GDAL6Q4/x/8P0iVfBbzOR4kJY=,tag:BBLp16YnaCS8P4DNvwGDBw==,type:str]
+    version: 3.13.2

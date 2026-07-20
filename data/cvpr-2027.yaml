@@ -1,0 +1,42 @@
+id: cvpr-2027
+name: CVPR 2027
+full_name: IEEE/CVF Conference on Computer Vision and Pattern Recognition
+year: 2027
+tier: A*
+dates_confirmed: false
+topics:
+    - computer vision
+    - pattern recognition
+    - multimodal learning
+location: TBA
+format: in-person
+website: https://cvpr.thecvf.com/
+cfp_url: https://cvpr.thecvf.com/Conferences/2027/CallForPapers
+deadlines:
+    abstract: "2026-11-08"
+    full_paper: "2026-11-15"
+    rebuttal: "2027-01-30"
+    notification: "2027-02-26"
+conference_dates:
+    start: "2027-06-13"
+    end: "2027-06-18"
+# --- private curation layer (encrypted by SOPS) ---
+priority: ENC[AES256_GCM,data:vQ==,iv:HXYXZ/93/oYOEA5tITtEqrWAp2eTPN8awKFfccwuwAs=,tag:nPm/nGpH4hCeUk8LaDTE6Q==,type:int]
+notes: ENC[AES256_GCM,data:+JvRO8xO+u1ey9Zm2W9HForxNzy5mr2EqACJTbAshnkwiK7rJSl8Qxx5DJpWmS+Q8pSmYWnmxeeIn+q8S8tBu9ignTrsHN8X5NNkQS2KlIy6kjeyRNSoxTdnsvKMKqDakhOHEyWOohAEbIRzmI0ojf8FrJHsXm7QpwF0SQ==,iv:RqXtE9udRb3XRFw5xX3H/D0yjXtrzPgmmN0zGptdMtQ=,tag:ohLRSNI0rFBOtc7n+qdhdQ==,type:str]
+contacts:
+    - ENC[AES256_GCM,data:+EKeoOTLimB63ELDNutqq9UKOX4PiQ==,iv:/jC3GGpfku6LJ494PQ8O/BHyYq0XUTWHoeMgEpbVOp4=,tag:bfbLb7KM0wsj3okOzrEmmQ==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBiUFlyZ3hJZWRpYlNnZTZm
+            Zm9tYm1pYjdreFlBUTRtVDB6dTZRYlBjdno0CmdxVVJHRTNTMWxBZ0xQN1NlTEhR
+            R3ZVUDFxMURxeWVMVi8yenhzY21raGcKLS0tIHlWbVB6bDlEV1JRUXpVZ3dFT0Mx
+            RFVJUW9yWWFZdUVyM0VpYUVBSDl4R0EKQqNsFatYLQSfOX65KxYsg1Iw3nkq2vwQ
+            JABNqmirCdgV989vQsjLlTUwQnBCdaySXtGLHJp8ikrj8AjkcuFZ6w==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
+    encrypted_regex: ^(notes|priority|contacts)$
+    lastmodified: "2026-07-20T02:09:03Z"
+    mac: ENC[AES256_GCM,data:u51PGAHesmAsR78CqHwV4AuD1yDKWD+AmaKqtcjlDCo0a2YLnIbSzlb0prJw5xAJrecuihhJ/+SN7HnLCZ3p+RUgWHQ96AI5ET73VBmjxgyC7YY0akyTmOz737LLJ+iJH/tFHt0ECdmy+WEwIZ7qnE/K8v+Mdd2NH14QRgEhGLI=,iv:3ArAB2031BDFU0IxIZpW3opXVz4/91KezrQdU4ZOPAI=,tag:XoSJyP9rw46EQSb0dG2q2g==,type:str]
+    version: 3.13.2

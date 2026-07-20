@@ -1,0 +1,42 @@
+id: aaai-2027
+name: AAAI 2027
+full_name: AAAI Conference on Artificial Intelligence
+year: 2027
+tier: A*
+dates_confirmed: false
+topics:
+    - artificial intelligence
+    - knowledge representation
+    - planning
+location: TBA
+format: in-person
+website: https://aaai.org/conference/aaai/
+cfp_url: https://aaai.org/conference/aaai/aaai-27/
+deadlines:
+    abstract: "2026-08-01"
+    full_paper: "2026-08-08"
+    rebuttal: "2026-10-15"
+    notification: "2026-11-15"
+conference_dates:
+    start: "2027-02-11"
+    end: "2027-02-18"
+# --- private curation layer (encrypted by SOPS) ---
+priority: ENC[AES256_GCM,data:Rg==,iv:4Qgb9NIZ4Oj2VxsCVQN2fdbRAhvvVWscbyoNRE7AKl0=,tag:dJiFa48QqEkNqcWBEs7jTQ==,type:int]
+notes: ENC[AES256_GCM,data:2qT461vJExKolrxG2VwR36jFVWSHCTjpXv9GgszM47ToXSQzFw4ol+gteQiI4cUJzT8KRUPzwl+l8ck/7PQWnARO6b7OW+8LWCrgRLID81c72ZTdM76lCOJ0k+/Zay2O6PXDtTMI7A==,iv:CbSdJ/VPdJ0xoMfbh8ITSgmafqjugup2UyfIZ79gfH0=,tag:4BC37EuzhquMPp8dTnPeNQ==,type:str]
+contacts:
+    - ENC[AES256_GCM,data:D2BKqC0EOuCFXoHsE2Ij+q7fj8uC,iv:AhrruDLS3bCnhT2bbfwBs3TrNOfPk7wIsWvEkh4GvLw=,tag:Ar7obB5h4+qKxq/GFl+S5g==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBKdDMwbnVha004K2lCZ1hI
+            SjcxTkZFZWtVNUpMQ1d3VUF4UDUvZy9zWEE4Cjh2QVNrMUovQmxxVHZPTEZ6aThF
+            alJZMHdzWmswYWRERGdKTWVOc0RZNkEKLS0tIGdOQW1iWkN6R3dCSjkwVmR1c1lV
+            WVg4ek1BbkZOdjBBOW9xQWRxU1VIdVUKawrKEhjk7bcFy1STJp0lX24BM1vuLcob
+            X2Z00srT0cm1lhkx8iCTFsRxt0pWPwlyqKlZhqccQdS7jEviy3jYNA==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
+    encrypted_regex: ^(notes|priority|contacts)$
+    lastmodified: "2026-07-20T02:09:03Z"
+    mac: ENC[AES256_GCM,data:ObUdEH9i0zN7OK0tJrZIu3VeQ1qL2QRJyuVRRwrPojMr1DZVU6lrxVVvbN+HGCsVkdV3WZ3fcgYxXjvgXO9tayvMvWocydtPFEy+e/836fHvVHEmcPrbD2xgWRQgrFPjHT4f6ZjjGfw/NemjHWeO7lcH7TxaY/zPZ/ukPKPqCOw=,iv:u7FK59eBhBDrMuOUGiTSNOcVJsaPPoYa7gcfVLKKb+w=,tag:lUIxold7ih03z6VDZb1jUQ==,type:str]
+    version: 3.13.2
