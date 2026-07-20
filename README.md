@@ -50,7 +50,7 @@ published site. They only help you rank/annotate entries privately.
 ## Local build
 
 ```bash
-python3 -m pip install -r requirements.txt
+python3 -m pip install "PyYAML>=6.0"
 export SOPS_AGE_KEY_FILE=$PWD/.keys/age.key
 # decrypt a throwaway copy, build, inspect site/
 for f in data/*.yaml; do sops -d "$f" > "$f.plain" && mv "$f.plain" "$f"; done  # ⚠ mutates in place

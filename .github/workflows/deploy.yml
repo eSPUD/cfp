@@ -35,7 +35,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python deps
-        run: pip install -r requirements.txt
+        # Installed inline (no requirements.txt manifest) so GitHub's dependency
+        # graph does not spawn a "Graph Update: pip" Actions run on this repo.
+        run: pip install "PyYAML>=6.0"
 
       - name: Decrypt data
         env:
