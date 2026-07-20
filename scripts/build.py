@@ -60,27 +60,11 @@ def public_view(entry: dict) -> dict:
 
 
 def render_html(entries: list[dict]) -> str:
-    rows = []
-    for e in entries:
-        name = html.escape(str(e.get("name", e.get("id", "?"))))
-        cfp_url = html.escape(str(e.get("cfp_url", e.get("website", "#"))))
-        topics = html.escape(", ".join(e.get("topics", [])))
-        loc = html.escape(str(e.get("location", "—")))
-        tier = html.escape(str(e.get("tier", "—")))
-        paper_dl = html.escape(str((e.get("deadlines") or {}).get("full_paper", "—")))
-        conf = e.get("conference_dates") or {}
-        conf_dates = html.escape(f"{conf.get('start', '?')} – {conf.get('end', '?')}")
-        rows.append(
-            f"    <tr>"
-            f"<td><a href='{cfp_url}'>{name}</a></td>"
-            f"<td>{tier}</td>"
-            f"<td>{topics}</td>"
-            f"<td>{loc}</td>"
-            f"<td class='dl'>{paper_dl}</td>"
-            f"<td>{conf_dates}</td>"
-            f"</tr>"
-        )
-    body = "\n".join(rows)
+    # Data is embedded as JSON and rendered by the browser so the table can be
+    # searched, sorted, and filtered without any server or build step.
+    data_json = json.dumps(entries, ensure_ascii=False)
+    # Escape </script> so the payload can't break out of the script tag.
+    data_json = data_json.replace("</", "<\\/")
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,29 +72,178 @@ def render_html(entries: list[dict]) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Conference Call for Papers</title>
 <style>
-  :root {{ color-scheme: light dark; }}
-  body {{ font-family: system-ui, -apple-system, sans-serif; margin: 2rem auto; max-width: 1000px; padding: 0 1rem; }}
-  h1 {{ font-size: 1.6rem; }}
-  table {{ border-collapse: collapse; width: 100%; font-size: 0.95rem; }}
-  th, td {{ text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid #8884; }}
-  th {{ position: sticky; top: 0; background: Canvas; }}
+  :root {{
+    color-scheme: light dark;
+    --accent: #4f8cff;
+    --soon: #e9a23b;
+    --passed: #8a8a8a;
+    --chip: color-mix(in srgb, CanvasText 10%, Canvas);
+    --border: color-mix(in srgb, CanvasText 18%, Canvas);
+    --hover: color-mix(in srgb, CanvasText 6%, Canvas);
+  }}
+  * {{ box-sizing: border-box; }}
+  body {{ font-family: system-ui, -apple-system, sans-serif; margin: 2rem auto; max-width: 1120px; padding: 0 1rem; line-height: 1.45; }}
+  h1 {{ font-size: 1.6rem; margin-bottom: .2rem; }}
+  .sub {{ opacity: .75; margin-top: 0; }}
+  .controls {{ display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: 1.2rem 0 .8rem; }}
+  .controls input, .controls select {{
+    font: inherit; padding: .45rem .6rem; border: 1px solid var(--border);
+    border-radius: 8px; background: Canvas; color: CanvasText;
+  }}
+  #q {{ flex: 1 1 260px; min-width: 200px; }}
+  .count {{ opacity: .7; font-size: .9rem; margin-left: auto; }}
+  table {{ border-collapse: collapse; width: 100%; font-size: .94rem; }}
+  th, td {{ text-align: left; padding: .55rem .65rem; border-bottom: 1px solid var(--border); vertical-align: top; }}
+  thead th {{
+    position: sticky; top: 0; background: Canvas; cursor: pointer; user-select: none;
+    white-space: nowrap; z-index: 1;
+  }}
+  thead th:hover {{ background: var(--hover); }}
+  th .arrow {{ opacity: .4; font-size: .8em; }}
+  th[aria-sort="ascending"] .arrow, th[aria-sort="descending"] .arrow {{ opacity: 1; color: var(--accent); }}
+  tbody tr:hover {{ background: var(--hover); }}
+  .name a {{ color: inherit; font-weight: 600; text-decoration: none; }}
+  .name a:hover {{ text-decoration: underline; }}
+  .name small {{ display: block; opacity: .6; font-weight: 400; font-size: .82em; }}
+  .tier {{ font-weight: 600; white-space: nowrap; }}
+  .chips {{ display: flex; flex-wrap: wrap; gap: .3rem; }}
+  .chip {{ background: var(--chip); border-radius: 20px; padding: .1rem .55rem; font-size: .8em; white-space: nowrap; }}
   td.dl {{ font-variant-numeric: tabular-nums; white-space: nowrap; }}
-  a {{ color: inherit; }}
-  footer {{ margin-top: 2rem; font-size: 0.85rem; opacity: 0.7; }}
+  .badge {{ display: inline-block; margin-left: .35rem; padding: .05rem .4rem; border-radius: 6px; font-size: .74em; font-weight: 600; }}
+  .badge.soon {{ background: color-mix(in srgb, var(--soon) 25%, Canvas); color: var(--soon); }}
+  .badge.passed {{ background: color-mix(in srgb, var(--passed) 22%, Canvas); color: var(--passed); }}
+  .tentative {{ color: var(--soon); cursor: help; font-size: .8em; margin-left: .3rem; }}
+  .fmt {{ font-size: .82em; opacity: .8; text-transform: capitalize; }}
+  footer {{ margin-top: 2rem; font-size: .85rem; opacity: .7; }}
+  .empty {{ text-align: center; padding: 2rem; opacity: .6; }}
 </style>
 </head>
 <body>
 <h1>AI Conference — Call for Papers</h1>
-<p>Curated deadlines for reputed global AI conferences, sorted by next deadline.</p>
+<p class="sub">Curated deadlines for reputed global AI conferences. Search, sort any column, or filter by tier and topic.</p>
+
+<div class="controls">
+  <input id="q" type="search" placeholder="Search conference, topic, or location…" autocomplete="off" aria-label="Search">
+  <select id="tier" aria-label="Filter by tier"><option value="">All tiers</option></select>
+  <select id="topic" aria-label="Filter by topic"><option value="">All topics</option></select>
+  <span class="count" id="count"></span>
+</div>
+
 <table>
   <thead>
-    <tr><th>Conference</th><th>Tier</th><th>Topics</th><th>Location</th><th>Paper deadline</th><th>Conference dates</th></tr>
+    <tr>
+      <th data-key="name">Conference <span class="arrow">↕</span></th>
+      <th data-key="tier">Tier <span class="arrow">↕</span></th>
+      <th data-key="topics">Topics <span class="arrow">↕</span></th>
+      <th data-key="location">Location <span class="arrow">↕</span></th>
+      <th data-key="paper" data-default="asc">Paper deadline <span class="arrow">↕</span></th>
+      <th data-key="conf">Conference dates <span class="arrow">↕</span></th>
+    </tr>
   </thead>
-  <tbody>
-{body}
-  </tbody>
+  <tbody id="rows"></tbody>
 </table>
+<p class="empty" id="empty" hidden>No conferences match your filters.</p>
+
+<noscript><p>Enable JavaScript for search and sorting, or see the raw <a href="cfps.json">cfps.json</a>.</p></noscript>
 <footer>Generated by scripts/build.py · data in <code>data/*.yaml</code> · <a href="cfps.json">cfps.json</a></footer>
+
+<script id="cfp-data" type="application/json">{data_json}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('cfp-data').textContent);
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));
+const today = new Date(); today.setHours(0,0,0,0);
+
+const paperDeadline = e => (e.deadlines && e.deadlines.full_paper) || '';
+const confStart = e => (e.conference_dates && e.conference_dates.start) || '';
+
+function deadlineCell(e) {{
+  const d = paperDeadline(e);
+  if (!d) return '—';
+  const dt = new Date(d + 'T00:00:00');
+  const days = Math.round((dt - today) / 86400000);
+  const tentative = e.dates_confirmed === false
+    ? ' <span class="tentative" title="Estimated from prior editions — verify against the official CFP">≈</span>' : '';
+  let badge = '';
+  if (days < 0) badge = ' <span class="badge passed">passed</span>';
+  else if (days <= 45) badge = ` <span class="badge soon">${{days}}d left</span>`;
+  return esc(d) + tentative + badge;
+}}
+
+function topicsCell(e) {{
+  return '<div class="chips">' + (e.topics || []).map(t => `<span class="chip">${{esc(t)}}</span>`).join('') + '</div>';
+}}
+
+function rowHtml(e) {{
+  const url = esc(e.cfp_url || e.website || '#');
+  const conf = e.conference_dates || {{}};
+  const confTxt = conf.start ? `${{esc(conf.start)}} – ${{esc(conf.end || '?')}}` : '—';
+  return `<tr>
+    <td class="name"><a href="${{url}}" target="_blank" rel="noopener">${{esc(e.name || e.id)}}</a>
+      <small>${{esc(e.full_name || '')}} <span class="fmt">${{esc(e.format || '')}}</span></small></td>
+    <td class="tier">${{esc(e.tier || '—')}}</td>
+    <td>${{topicsCell(e)}}</td>
+    <td>${{esc(e.location || '—')}}</td>
+    <td class="dl">${{deadlineCell(e)}}</td>
+    <td class="dl">${{confTxt}}</td>
+  </tr>`;
+}}
+
+// --- sorting ---
+let sortKey = 'paper', sortDir = 1;
+const sortVal = {{
+  name: e => (e.name || '').toLowerCase(),
+  tier: e => (e.tier || '~'),
+  topics: e => (e.topics || []).join(', ').toLowerCase(),
+  location: e => (e.location || '~').toLowerCase(),
+  paper: e => paperDeadline(e) || '9999',
+  conf: e => confStart(e) || '9999',
+}};
+
+function apply() {{
+  const q = $('#q').value.trim().toLowerCase();
+  const tier = $('#tier').value;
+  const topic = $('#topic').value;
+  let rows = DATA.filter(e => {{
+    if (tier && e.tier !== tier) return false;
+    if (topic && !(e.topics || []).includes(topic)) return false;
+    if (q) {{
+      const hay = [e.name, e.full_name, e.location, (e.topics||[]).join(' ')].join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }}
+    return true;
+  }});
+  rows.sort((a, b) => {{
+    const va = sortVal[sortKey](a), vb = sortVal[sortKey](b);
+    return va < vb ? -sortDir : va > vb ? sortDir : 0;
+  }});
+  $('#rows').innerHTML = rows.map(rowHtml).join('');
+  $('#empty').hidden = rows.length > 0;
+  $('#count').textContent = `${{rows.length}} of ${{DATA.length}} conferences`;
+  document.querySelectorAll('thead th').forEach(th => {{
+    th.setAttribute('aria-sort',
+      th.dataset.key === sortKey ? (sortDir === 1 ? 'ascending' : 'descending') : 'none');
+  }});
+}}
+
+// populate filters
+[...new Set(DATA.map(e => e.tier).filter(Boolean))].sort()
+  .forEach(t => $('#tier').insertAdjacentHTML('beforeend', `<option value="${{esc(t)}}">${{esc(t)}}</option>`));
+[...new Set(DATA.flatMap(e => e.topics || []))].sort()
+  .forEach(t => $('#topic').insertAdjacentHTML('beforeend', `<option value="${{esc(t)}}">${{esc(t)}}</option>`));
+
+$('#q').addEventListener('input', apply);
+$('#tier').addEventListener('change', apply);
+$('#topic').addEventListener('change', apply);
+document.querySelectorAll('thead th').forEach(th => th.addEventListener('click', () => {{
+  const k = th.dataset.key;
+  if (sortKey === k) sortDir = -sortDir;
+  else {{ sortKey = k; sortDir = 1; }}
+  apply();
+}}));
+
+apply();
+</script>
 </body>
 </html>
 """
