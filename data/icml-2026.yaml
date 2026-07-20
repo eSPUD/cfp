@@ -1,0 +1,41 @@
+id: icml-2026
+name: ICML 2026
+full_name: International Conference on Machine Learning
+year: 2026
+tier: A*
+topics:
+    - machine learning
+    - optimization
+    - reinforcement learning
+location: Seoul, South Korea
+format: in-person
+website: https://icml.cc/
+cfp_url: https://icml.cc/Conferences/2026/CallForPapers
+deadlines:
+    abstract: "2026-01-23"
+    full_paper: "2026-01-30"
+    rebuttal: "2026-03-26"
+    notification: "2026-05-01"
+conference_dates:
+    start: "2026-07-12"
+    end: "2026-07-18"
+# --- private curation layer (encrypted by SOPS) ---
+priority: ENC[AES256_GCM,data:3A==,iv:POyxu+3aBmngqQ2JoFRQyvcSgQvaJJOeyXOSNIO2dDA=,tag:NHbZ9SQcb/lMHZSdxjCJhw==,type:int]
+notes: ENC[AES256_GCM,data:Hei8Vn/QWwwkiChFplD8uNtIrqgMuOqbD1m3AJy3RrRBPa6Z33ac2LamVr2lTTL1SCPwnk/6ntjOZ9jL/1Oqw9ApZ6xM,iv:BoqSBnQAcwWCZ9x0odXn6CxJCJ2V//rGjbc9lZCDWxQ=,tag:JCMClVxXGCCjkWBtRA8KLA==,type:str]
+contacts:
+    - ENC[AES256_GCM,data:g+D8UU1f9lg9QwbJ7cw4LG+y,iv:oi0hUa5uWkZYlrraJ4OtY4ewdW+claZjiiJOYoCWgcw=,tag:vdCKxRxVRY4jYPFx3mYrmQ==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBDSmxKR0Y4Ri9OYTFOalV4
+            dHF0TXBYQ3U0V3FIc0l2Mm4zcFZvYUxyUkYwCnVCN3lvODJQMlpuMjl0eThZOGph
+            TlUyMWNXRmZVTlh2YUFOZ0xvZVg3TUUKLS0tIFVjOW5mUEVhazZDcjlGUXgxbGhr
+            aDZKR2ZuMkVDTC9ZeElDMXQ1ZFNDdzQKcTEz57d0M8K/Cpotb2qJqm7w+brrI8Ir
+            Bfyqp8NDPlPYCRSScCKW3i2KhPQ2cmsMOv8pgX/1lqO+YaWWQPl7vg==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
+    encrypted_regex: ^(notes|priority|contacts)$
+    lastmodified: "2026-07-20T01:58:45Z"
+    mac: ENC[AES256_GCM,data:Dowle9oOUpqBMPJMjhX1Jbs4qawemZhBKnSSDUZFnXHhnzAF1ZOfe67iPFR8IKDV7MbMfyXRcMF7eJUtGxClRxHxwNQ3uE7uD8ATkAOEaRM9Ua1ifnzsxM4pggdckXumIjy+CnsJkBaEADQf5QDyuPGwGgdVavdLE2OuJCCarhk=,iv:QsarYUS71DXgYPM8aVMoUWJgU/x7/JXwjXIfIj/6j4I=,tag:UxisRlJhHMQ1QC+1Oo4cBw==,type:str]
+    version: 3.13.2

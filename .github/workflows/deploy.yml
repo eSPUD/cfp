@@ -1,0 +1,72 @@
+name: Build & Deploy CFP site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Allow the workflow to publish to GitHub Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; don't cancel an in-progress publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install SOPS
+        run: |
+          curl -fsSL -o /usr/local/bin/sops \
+            https://github.com/getsops/sops/releases/download/v3.13.2/sops-v3.13.2.linux.amd64
+          chmod +x /usr/local/bin/sops
+          sops --version --disable-version-check
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      - name: Decrypt data
+        env:
+          # The age PRIVATE key, stored as a repo secret. SOPS reads it from
+          # this env var directly — the plaintext key never touches disk.
+          SOPS_AGE_KEY: ${{ secrets.SOPS_AGE_KEY }}
+        run: |
+          for f in data/*.yaml data/*.yml; do
+            [ -e "$f" ] || continue
+            sops --decrypt --in-place "$f"
+          done
+
+      - name: Build site
+        run: python scripts/build.py
+
+      - name: Scrub decrypted plaintext from the runner
+        if: always()
+        run: rm -f data/*.yaml data/*.yml
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

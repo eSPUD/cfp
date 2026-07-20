@@ -1,0 +1,18 @@
+# SOPS configuration.
+#
+# `encrypted_regex` means SOPS only encrypts the VALUES of keys matching the
+# pattern below. All other fields (conference name, deadline, location, links…)
+# stay in plaintext so git diffs remain meaningful and the data is reviewable.
+#
+# Encrypted fields = your private curation layer:
+#   notes    – free-text analysis / opinions
+#   priority – internal ranking
+#   contacts – private contact info
+#
+# The `age` recipient is the PUBLIC key. Anyone can encrypt to it; only the
+# holder of the matching private key (in .keys/age.key locally, or the
+# SOPS_AGE_KEY GitHub Secret in CI) can decrypt.
+creation_rules:
+  - path_regex: data/.*\.ya?ml$
+    encrypted_regex: '^(notes|priority|contacts)$'
+    age: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28

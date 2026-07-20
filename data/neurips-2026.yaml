@@ -1,0 +1,41 @@
+id: neurips-2026
+name: NeurIPS 2026
+full_name: Conference on Neural Information Processing Systems
+year: 2026
+tier: A*
+topics:
+    - machine learning
+    - deep learning
+    - neuroscience
+location: San Diego, USA
+format: hybrid
+website: https://neurips.cc/
+cfp_url: https://neurips.cc/Conferences/2026/CallForPapers
+deadlines:
+    abstract: "2026-05-15"
+    full_paper: "2026-05-22"
+    rebuttal: "2026-08-01"
+    notification: "2026-09-18"
+conference_dates:
+    start: "2026-12-07"
+    end: "2026-12-13"
+# --- private curation layer (encrypted by SOPS) ---
+priority: ENC[AES256_GCM,data:4Q==,iv:Fm9tMHEWsA8aroJLMVwA9ipaHCMbaHD3E6MPYISm0t0=,tag:oGviWG+R6NBQNunF2W3USQ==,type:int]
+notes: ENC[AES256_GCM,data:25gWq2IjKEMqmVkufAbPEig4Nd85poFhC6EdzR7xepn6UKwfJnsiQLZzQqHnTm0s+IWF3QzT9pVJpmzIVCKm8zcP15Mz+8Pnvd/J6OMAsLxKDjxR,iv:WjoEUdflpUUi4GBxPPgOxfZh+3crHDMHA2K+4Mkw/6M=,tag:gaHLO7r9BMTN+grlUe+JhA==,type:str]
+contacts:
+    - ENC[AES256_GCM,data:+LnrrVtiY6qQJlApt6ZJRt0O68l7DyCeSw==,iv:zNy4HeAB9iTfjygo2w7VGHeKjvEQZbcKJ+6GRxSzhgE=,tag:8+OotGxirUn2ax/5Vmx2XQ==,type:str]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCNXNKdm1KRlR1dTZxa3lx
+            Y1UxbGhNcWY5ZFVGMTk1dXBIYXEyTGV2R0FNClF2UkZHTTNUTXRjNWlsdUFudEVp
+            d0JsMmFFNFc4WC9xN2VkMXFaWGU1Q3MKLS0tIG5KUEpZNVlzbGtXL2JlajZXUnIr
+            ekc2YUVyaCthYkptU09WcmtvbjV0R1UK6nFYfrgEFp23fe8QaFseX/cht2B45J/H
+            adPSMMd5Chy0YwWgZ2W8WAdyPAWnU6y3tRWP57bwfqY/FxRU8hQhMg==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1dwpqymdufz8vyxv7058hmplrs03krje205phazkqvh7x80el44ks4lfd28
+    encrypted_regex: ^(notes|priority|contacts)$
+    lastmodified: "2026-07-20T01:58:45Z"
+    mac: ENC[AES256_GCM,data:BHnVHnRt8lP49AxNQ8eW3YBvawIQKe6NhpJRrRWThTsmpTgEVrsNykv9Wa+uCtoE2K1be+Lfi5+BhYT9nCSCCpIq7Mtgh4GEHS9x8fNRvH+0X4Kp+OFhZ3KIit3OrrVC55hkKOt/FJtNOJmlmHlAnCwdmZlOe9dtNQlBaM8SgMI=,iv:F8S1fpQZ7GybyQVGOAikJK0Gu3DfDrZl1+pGdTGQsZ8=,tag:FVQLP/z3EenQeBtLzgv0IA==,type:str]
+    version: 3.13.2
